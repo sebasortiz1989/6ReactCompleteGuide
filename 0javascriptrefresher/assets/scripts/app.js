@@ -117,20 +117,41 @@
 // console.log(name1);
 // console.log(newAge);
 
-const hobbies1 = ["Sports", "Cooking", "Reading"];
-const hobbies2 = ["Running"];
+// const hobbies1 = ["Sports", "Cooking", "Reading"];
+// const hobbies2 = ["Running"];
+//
+// const mergedHobbies = [...hobbies1, ...hobbies2];
+// console.log(mergedHobbies);
+//
+// const user = {
+//     name: "John",
+//     age: 35,
+// }
+//
+// const extendedUser = {
+//     isAdmin: true,
+//     ...user
+// };
+//
+// console.log(extendedUser);
 
-const mergedHobbies = [...hobbies1, ...hobbies2];
-console.log(mergedHobbies);
+const password = prompt("Your password");
 
-const user = {
-    name: "John",
-    age: 35,
+if (password === "Hello") {
+    console.log("Hello works");
+} else if (password === "hello") {
+    console.log("hello works");
+} else {
+    console.log("Access not granted")
 }
 
-const extendedUser = {
-    isAdmin: true,
-    ...user
-};
+const hobbies1 = ["Sports", "Cooking", "Reading"];
 
-console.log(extendedUser);
+
+for (const hobby of hobbies1) {
+    console.log(hobby);
+}
+
+for (let i = 0; i < password.length; i++) {
+    
+}
