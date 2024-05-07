@@ -65,29 +65,72 @@
 // const user1 = new User("Manuel", 35);
 // console.log(user1.name);
 
-const hobbies = ["Sports", "Cooking", "Reading"];
-console.log(hobbies[0]);
+// const hobbies = ["Sports", "Cooking", "Reading"];
+// console.log(hobbies[0]);
+//
+// hobbies.push("Working")
+// console.log(hobbies);
+//
+// const index = hobbies.findIndex((item) => {
+//     return item === 'Sports';
+// })
+//
+// const index1 = hobbies.findIndex((item) =>  item === 'Sports');
+//
+// console.log(index);
+//
+// const editedHobbies = hobbies.map((item) => item + "!")
+// console.log(editedHobbies);
+//
+// const editedHobbies1 = hobbies.map((item, index) => ({text: item, index: index}))
+// console.log(editedHobbies1);
+//
+// const numbers = transformToObjects([1, 2, 3]);
+// console.log(numbers);
+//
+// function transformToObjects(numberArray) {
+//     return numberArray.map((val) => ({val}));
+// }
 
-hobbies.push("Working")
-console.log(hobbies);
+// const userNameData = ["Max", "Santacoloma"];
+//
+// const firstName = userNameData[0];
+// const lastName = userNameData[1];
 
-const index = hobbies.findIndex((item) => {
-    return item === 'Sports';
-})
+// const [firstName, lastName] = ["Max", "Santacoloma"];
+// console.log(firstName);
+// console.log(lastName);
+//
+// const user = {
+//     name: "John",
+//     age: 35,
+// }
+//
+// const name = user.name;
+// const age = user.age;
+//
+// const {name1, age1: newAge} = {
+//     name1: "John",
+//     age1: 35,
+// }
+//
+// console.log(name1);
+// console.log(newAge);
 
-const index1 = hobbies.findIndex((item) =>  item === 'Sports');
+const hobbies1 = ["Sports", "Cooking", "Reading"];
+const hobbies2 = ["Running"];
 
-console.log(index);
+const mergedHobbies = [...hobbies1, ...hobbies2];
+console.log(mergedHobbies);
 
-const editedHobbies = hobbies.map((item) => item + "!")
-console.log(editedHobbies);
-
-const editedHobbies1 = hobbies.map((item, index) => ({text: item, index: index}))
-console.log(editedHobbies1);
-
-const numbers = transformToObjects([1, 2, 3]);
-console.log(numbers);
-
-function transformToObjects(numberArray) {
-    return numberArray.map((val) => ({val}));
+const user = {
+    name: "John",
+    age: 35,
 }
+
+const extendedUser = {
+    isAdmin: true,
+    ...user
+};
+
+console.log(extendedUser);
