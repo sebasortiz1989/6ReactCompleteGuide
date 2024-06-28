@@ -135,23 +135,50 @@
 //
 // console.log(extendedUser);
 
-const password = prompt("Your password");
+// const password = prompt("Your password");
+//
+// if (password === "Hello") {
+//     console.log("Hello works");
+// } else if (password === "hello") {
+//     console.log("hello works");
+// } else {
+//     console.log("Access not granted")
+// }
 
-if (password === "Hello") {
-    console.log("Hello works");
-} else if (password === "hello") {
-    console.log("hello works");
-} else {
-    console.log("Access not granted")
-}
+// const hobbies1 = ["Sports", "Cooking", "Reading"];
+//
+//
+// for (const hobby of hobbies1) {
+//     console.log(hobby);
+// }
+//
+// for (let i = 0; i < password.length; i++) {
+//    
+// }
 
+// function handleTimeout() {
+//     console.log("Time out");
+// }
+//
+// setTimeout(handleTimeout, 2000);
+//
+// function greeter(greetFn) {
+//     greetFn();
+// }
+//
+// greeter(() => {console.log("hi")});
+
+// function init() {
+//     function greet() {
+//         console.log("Hello World!");
+//     }
+//
+//     greet();
+// }
+//
+// init();
+
+let userMessage = 'Hello';
+userMessage = 'Hello there!';
 const hobbies1 = ["Sports", "Cooking", "Reading"];
-
-
-for (const hobby of hobbies1) {
-    console.log(hobby);
-}
-
-for (let i = 0; i < password.length; i++) {
-    
-}
+hobbies1.push('Crossfit');
