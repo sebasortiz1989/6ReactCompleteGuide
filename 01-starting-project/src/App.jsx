@@ -1,6 +1,7 @@
 import { CORE_CONCEPTS } from "./data.js";
 import Header from "./components/Header/Header";
 import CoreConcept from "./components/CoreConcept";
+import TabButton from "./components/TabButton";
 
 function App() {
     return (
@@ -19,7 +20,15 @@ function App() {
                             image={CORE_CONCEPTS[3].image}/>
                     </ul>
                 </section>
-                <h2>Time to get started!</h2>
+                <section id="examples">
+                    <h2>Examples</h2>
+                    <menu>
+                        <TabButton>Components</TabButton>
+                        <TabButton>Components</TabButton>
+                        <TabButton>Components</TabButton>
+                        <TabButton>Components</TabButton>
+                    </menu>
+                </section>
             </main>
         </div>
     );
